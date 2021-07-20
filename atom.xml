@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阿木木的书店</title>
+  
+  <subtitle>扶苏~~暮雪</subtitle>
+  <link href="http://alhua.fit/atom.xml" rel="self"/>
+  
+  <link href="http://alhua.fit/"/>
+  <updated>2021-07-20T06:47:30.094Z</updated>
+  <id>http://alhua.fit/</id>
+  
+  <author>
+    <name>爱料理的老大</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitLab CI/CD 介绍和使用</title>
+    <link href="http://alhua.fit/2018/11/22/ruan-jian-gong-ju/devops/gitlab-ci-jie-shao-he-shi-yong/"/>
+    <id>http://alhua.fit/2018/11/22/ruan-jian-gong-ju/devops/gitlab-ci-jie-shao-he-shi-yong/</id>
+    <published>2018-11-22T15:30:00.000Z</published>
+    <updated>2021-07-20T06:47:30.094Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、持续集成介绍&quot;&gt;&lt;a href=&quot;#一、持续集成介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="GitLab CI" scheme="http://alhua.fit/tags/GitLab-CI/"/>
+    
+    <category term="DevOps" scheme="http://alhua.fit/tags/DevOps/"/>
+    
+    <category term="Jenkins" scheme="http://alhua.fit/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue 文档风格的 Typora 主题</title>
+    <link href="http://alhua.fit/2018/11/19/ruan-jian-gong-ju/markdown/vue-wen-dang-feng-ge-de-typora-zhu-ti/"/>
+    <id>http://alhua.fit/2018/11/19/ruan-jian-gong-ju/markdown/vue-wen-dang-feng-ge-de-typora-zhu-ti/</id>
+    <published>2018-11-18T16:30:00.000Z</published>
+    <updated>2021-07-20T06:47:30.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/blinkfox/typora-vue-theme&quot;&gt;typora-vue-theme&lt;/a&gt; 是 Typora Markdown 文档编辑器中一款类似&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Typora" scheme="http://alhua.fit/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="http://alhua.fit/tags/Markdown/"/>
+    
+    <category term="Vue" scheme="http://alhua.fit/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CPU多级缓存</title>
+    <link href="http://alhua.fit/2018/11/18/ruan-jian-gong-ju/cpu-duo-ji-huan-cun/"/>
+    <id>http://alhua.fit/2018/11/18/ruan-jian-gong-ju/cpu-duo-ji-huan-cun/</id>
+    <published>2018-11-18T13:55:00.000Z</published>
+    <updated>2021-07-20T06:47:30.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、什么是CPU缓存&quot;&gt;&lt;a href=&quot;#一、什么是CPU缓存&quot; class=&quot;headerlink&quot; title=&quot;一、什么是CPU缓存&quot;&gt;&lt;/a&gt;一、什么是CPU缓存&lt;/h2&gt;&lt;h3 id=&quot;1-CPU缓存的来历&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="CPU缓存" scheme="http://alhua.fit/tags/CPU%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript之再学习</title>
+    <link href="http://alhua.fit/2018/10/30/qian-duan/javascript-zhi-zai-xue-xi/"/>
+    <id>http://alhua.fit/2018/10/30/qian-duan/javascript-zhi-zai-xue-xi/</id>
+    <published>2018-10-29T16:30:00.000Z</published>
+    <updated>2021-07-20T06:47:30.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概览&quot;&gt;&lt;a href=&quot;#概览&quot; class=&quot;headerlink&quot; title=&quot;概览&quot;&gt;&lt;/a&gt;概览&lt;/h2&gt;&lt;p&gt;JavaScript 是一种面向对象的动态语言，它包含类型、运算符、标准内置（ built-in）对象和方法。它的语法来源于 Java 和</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://alhua.fit/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面向对象编程的理解</title>
+    <link href="http://alhua.fit/2018/10/21/bian-cheng-zhi-dao/mian-xiang-dui-xiang-bian-cheng-de-li-jie/"/>
+    <id>http://alhua.fit/2018/10/21/bian-cheng-zhi-dao/mian-xiang-dui-xiang-bian-cheng-de-li-jie/</id>
+    <published>2018-10-20T16:30:00.000Z</published>
+    <updated>2021-07-20T06:47:30.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;面向过程和面向对象&quot;&gt;&lt;a href=&quot;#面向过程和面向对象&quot; class=&quot;headerlink&quot; title=&quot;面向过程和面向对象&quot;&gt;&lt;/a&gt;面向过程和面向对象&lt;/h2&gt;&lt;h3 id=&quot;面向过程思想概述&quot;&gt;&lt;a href=&quot;#面向过程思想概述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="Java" scheme="http://alhua.fit/tags/Java/"/>
+    
+    <category term="面向对象编程" scheme="http://alhua.fit/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码整洁之道内容概要</title>
+    <link href="http://alhua.fit/2018/10/15/bian-cheng-zhi-dao/dai-ma-zheng-ji-zhi-dao-nei-rong-gai-yao/"/>
+    <id>http://alhua.fit/2018/10/15/bian-cheng-zhi-dao/dai-ma-zheng-ji-zhi-dao-nei-rong-gai-yao/</id>
+    <published>2018-10-15T14:48:00.000Z</published>
+    <updated>2021-07-20T06:47:30.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;读了代码整洁之道，觉得这本书写的很好，所以就将里面自己觉得很经典的内容记录下来，作为自己以后写代码的标准和准则。同时也为那些曾经困惑过的人一点参考吧！&lt;/p&gt;
+&lt;h2 id=&quot;一、在正式开始之前，我们先思考几个几个问题：&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="整洁代码" scheme="http://alhua.fit/tags/%E6%95%B4%E6%B4%81%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="重构" scheme="http://alhua.fit/tags/%E9%87%8D%E6%9E%84/"/>
+    
+    <category term="测试" scheme="http://alhua.fit/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用Bash命令整理之其他常用命令</title>
+    <link href="http://alhua.fit/2018/10/13/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-qi-ta-chang-yong-ming-ling/"/>
+    <id>http://alhua.fit/2018/10/13/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-qi-ta-chang-yong-ming-ling/</id>
+    <published>2018-10-13T10:15:00.000Z</published>
+    <updated>2021-07-20T06:47:30.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-hostname-查看主机名&quot;&gt;&lt;a href=&quot;#1-hostname-查看主机名&quot; class=&quot;headerlink&quot; title=&quot;1. hostname - 查看主机名&quot;&gt;&lt;/a&gt;1. hostname -</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Linux" scheme="http://alhua.fit/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用Bash命令整理之文本处理</title>
+    <link href="http://alhua.fit/2018/10/11/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-wen-ben-chu-li/"/>
+    <id>http://alhua.fit/2018/10/11/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-wen-ben-chu-li/</id>
+    <published>2018-10-11T14:05:00.000Z</published>
+    <updated>2021-07-20T06:47:30.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-sort-文本排序&quot;&gt;&lt;a href=&quot;#1-sort-文本排序&quot; class=&quot;headerlink&quot; title=&quot;1. sort - 文本排序&quot;&gt;&lt;/a&gt;1. sort -</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Linux" scheme="http://alhua.fit/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用Bash命令整理之操作文件和目录</title>
+    <link href="http://alhua.fit/2018/10/10/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-cao-zuo-wen-jian-he-mu-lu/"/>
+    <id>http://alhua.fit/2018/10/10/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-cao-zuo-wen-jian-he-mu-lu/</id>
+    <published>2018-10-10T15:10:00.000Z</published>
+    <updated>2021-07-20T06:47:30.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-touch-创建文件&quot;&gt;&lt;a href=&quot;#1-touch-创建文件&quot; class=&quot;headerlink&quot; title=&quot;1. touch - 创建文件&quot;&gt;&lt;/a&gt;1. touch -</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Linux" scheme="http://alhua.fit/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用Bash命令整理之查看文件和目录</title>
+    <link href="http://alhua.fit/2018/10/09/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-cha-kan-wen-jian-he-mu-lu/"/>
+    <id>http://alhua.fit/2018/10/09/ruan-jian-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-cha-kan-wen-jian-he-mu-lu/</id>
+    <published>2018-10-09T14:45:00.000Z</published>
+    <updated>2021-07-20T06:47:30.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-ls-列出文件名和目录&quot;&gt;&lt;a href=&quot;#1-ls-列出文件名和目录&quot; class=&quot;headerlink&quot; title=&quot;1. ls - 列出文件名和目录&quot;&gt;&lt;/a&gt;1. ls -</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Linux" scheme="http://alhua.fit/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>轻量级滚动动画JavaScript库aos.js</title>
+    <link href="http://alhua.fit/2018/10/08/qian-duan/qing-liang-ji-gun-dong-dong-hua-javascript-ku-aos.js/"/>
+    <id>http://alhua.fit/2018/10/08/qian-duan/qing-liang-ji-gun-dong-dong-hua-javascript-ku-aos.js/</id>
+    <published>2018-10-08T14:30:00.000Z</published>
+    <updated>2021-07-20T06:47:30.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://alhua.fit/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>全功能JavaScript灯箱画廊插件lightgallery.js</title>
+    <link href="http://alhua.fit/2018/10/06/qian-duan/quan-gong-neng-javascript-deng-xiang-hua-lang-cha-jian-lightgallery.js/"/>
+    <id>http://alhua.fit/2018/10/06/qian-duan/quan-gong-neng-javascript-deng-xiang-hua-lang-cha-jian-lightgallery.js/</id>
+    <published>2018-10-06T15:30:00.000Z</published>
+    <updated>2021-07-20T06:47:30.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://alhua.fit/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Google Java编程风格指南</title>
+    <link href="http://alhua.fit/2018/10/05/bian-cheng-zhi-dao/google-java-bian-cheng-feng-ge-zhi-nan/"/>
+    <id>http://alhua.fit/2018/10/05/bian-cheng-zhi-dao/google-java-bian-cheng-feng-ge-zhi-nan/</id>
+    <published>2018-10-05T08:38:00.000Z</published>
+    <updated>2021-07-20T06:47:30.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1 前言&quot;&gt;&lt;/a&gt;1 前言&lt;/h2&gt;&lt;p&gt;这份文档是&lt;code&gt;Google</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="Java" scheme="http://alhua.fit/tags/Java/"/>
+    
+    <category term="Google" scheme="http://alhua.fit/tags/Google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客主题之hexo-theme-matery的介绍</title>
+    <link href="http://alhua.fit/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/"/>
+    <id>http://alhua.fit/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/</id>
+    <published>2018-09-28T05:34:00.000Z</published>
+    <updated>2021-07-20T06:47:30.069Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;README.md&quot;&gt;English Document&lt;/a&gt; | &lt;a href=&quot;https://blinkfox.github.io/&quot;&gt;演示示例&lt;/a&gt; |</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://alhua.fit/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Hexo" scheme="http://alhua.fit/tags/Hexo/"/>
+    
+    <category term="hexo-theme-matery" scheme="http://alhua.fit/tags/hexo-theme-matery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git知识点整理</title>
+    <link href="http://alhua.fit/2018/09/24/ruan-jian-gong-ju/git/git-zhi-shi-dian-zheng-li/"/>
+    <id>http://alhua.fit/2018/09/24/ruan-jian-gong-ju/git/git-zhi-shi-dian-zheng-li/</id>
+    <published>2018-09-24T13:50:00.000Z</published>
+    <updated>2021-07-20T06:47:30.091Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-Git基本概念。&quot;&gt;&lt;a href=&quot;#1-Git基本概念。&quot; class=&quot;headerlink&quot; title=&quot;1. Git基本概念。&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Git" scheme="http://alhua.fit/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript基础教程</title>
+    <link href="http://alhua.fit/2018/09/14/qian-duan/javascript-ji-chu-jiao-cheng/"/>
+    <id>http://alhua.fit/2018/09/14/qian-duan/javascript-ji-chu-jiao-cheng/</id>
+    <published>2018-09-13T16:12:00.000Z</published>
+    <updated>2021-07-20T06:47:30.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、JavaScript介绍&quot;&gt;&lt;a href=&quot;#一、JavaScript介绍&quot; class=&quot;headerlink&quot; title=&quot;一、JavaScript介绍&quot;&gt;&lt;/a&gt;一、JavaScript介绍&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://alhua.fit/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
+    
+  </entry>
+  
+</feed>
