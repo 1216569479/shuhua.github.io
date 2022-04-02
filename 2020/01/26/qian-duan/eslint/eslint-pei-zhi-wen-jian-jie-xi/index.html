@@ -1,0 +1,2256 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="eslint配置文件, github">
+    <meta name="description" content="桃花坞里桃花庵，桃花庵下桃花仙.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>eslint配置文件 | 阿木木的书店</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="阿木木的书店" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">阿木木的书店</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">阿木木的书店</div>
+        <div class="logo-desc">
+            
+            桃花坞里桃花庵，桃花庵下桃花仙.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/爱料理的老大/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/爱料理的老大/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">eslint配置文件</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/eslintrc/">
+                                <span class="chip bg-color">eslintrc</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-01-26
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="eslint配置文件"><a href="#eslint配置文件" class="headerlink" title="eslint配置文件"></a>eslint配置文件</h1><p><code>eslint</code> 支持几种格式的配置文件，如果同一个目录下有多个配置文件，<code>eslint</code> 只会使用一个。优先级顺序如下：</p>
+<ul>
+<li><code>JavaScript</code> - 使用 <code>.eslintrc.js</code> 然后输出一个配置对象。</li>
+<li><code>YAML</code> - 使用 <code>.eslintrc.yaml</code> 或 <code>.eslintrc.yml</code> 去定义配置的结构。</li>
+<li><code>JSON</code> -使用 <code>.eslintrc.json</code> 去定义配置的结构，<code>eslint</code> 的 <code>JSON</code> 文件允许 <code>JavaScript</code> 风格的注释。</li>
+<li><code>Deprecated</code> -使用 <code>.eslintrc</code>，可以使 JSON 也可以是 YAML。</li>
+<li><code>package.json</code> - 在 <code>package.json</code> 里创建一个 <code>eslintConfig</code> 属性，在那里定义你的配置。</li>
+</ul>
+<h1 id="配置规则格式"><a href="#配置规则格式" class="headerlink" title="配置规则格式"></a>配置规则格式</h1><p>规则格式是<code>&lt;规则名称&gt;: &lt;告警级别&gt;</code>，告警级别分为三种:</p>
+<ol>
+<li>“0”表示忽略问题，等同于”off”;</li>
+<li>“1”表示给出警告，等同于”warn”;</li>
+<li>“2”表示直接报错，等同于”error”。</li>
+</ol>
+<h1 id="详细规则说明"><a href="#详细规则说明" class="headerlink" title="详细规则说明"></a>详细规则说明</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/AlloyTeam/eslint-config-alloy/blob/master/index.js">eslint-plugin-react 规则</a></li>
+</ul>
+<pre><code>/**
+ * AlloyTeam eslint 规则 - React
+ *
+ * 包含所有 eslint 规则，以及所有 eslint-plugin-react 规则
+ * 使用 babel-eslint 作为解析器
+ *
+ * @fixable 表示此配置支持 --fix
+ * @off 表示此配置被关闭了，并且后面说明了关闭的原因
+ */
+
+module.exports = &#123;
+    extends: [
+        &#39;./index.js&#39;,
+    ],
+    plugins: [
+        &#39;react&#39;
+    ],
+    rules: &#123;
+        // 布尔值类型的 propTypes 的 name 必须为 is 或 has 开头
+        // @off 不强制要求写 propTypes
+        &#39;react/boolean-prop-naming&#39;: &#39;off&#39;,
+        // 一个 defaultProps 必须有对应的 propTypes
+        // @off 不强制要求写 propTypes
+        &#39;react/default-props-match-prop-types&#39;: &#39;off&#39;,
+        // 组件必须有 displayName 属性
+        // @off 不强制要求写 displayName
+        &#39;react/display-name&#39;: &#39;off&#39;,
+        // 禁止在自定义组件中使用一些指定的 props
+        // @off 没必要限制
+        &#39;react/forbid-component-props&#39;: &#39;off&#39;,
+        // 禁止使用一些指定的 elements
+        // @off 没必要限制
+        &#39;react/forbid-elements&#39;: &#39;off&#39;,
+        // 禁止使用一些指定的 propTypes
+        // @off 不强制要求写 propTypes
+        &#39;react/forbid-prop-types&#39;: &#39;off&#39;,
+        // 禁止直接使用别的组建的 propTypes
+        // @off 不强制要求写 propTypes
+        &#39;react/forbid-foreign-prop-types&#39;: &#39;off&#39;,
+        // 禁止使用数组的 index 作为 key
+        // @off 太严格了
+        &#39;react/no-array-index-key&#39;: &#39;off&#39;,
+        // 禁止使用 children 做 props
+        &#39;react/no-children-prop&#39;: &#39;error&#39;,
+        // 禁止使用 dangerouslySetInnerHTML
+        // @off 没必要限制
+        &#39;react/no-danger&#39;: &#39;off&#39;,
+        // 禁止在使用了 dangerouslySetInnerHTML 的组建内添加 children
+        &#39;react/no-danger-with-children&#39;: &#39;error&#39;,
+        // 禁止使用已废弃的 api
+        &#39;react/no-deprecated&#39;: &#39;error&#39;,
+        // 禁止在 componentDidMount 里面使用 setState
+        // @off 同构应用需要在 didMount 里写 setState
+        &#39;react/no-did-mount-set-state&#39;: &#39;off&#39;,
+        // 禁止在 componentDidUpdate 里面使用 setState
+        &#39;react/no-did-update-set-state&#39;: &#39;error&#39;,
+        // 禁止直接修改 this.state
+        &#39;react/no-direct-mutation-state&#39;: &#39;error&#39;,
+        // 禁止使用 findDOMNode
+        &#39;react/no-find-dom-node&#39;: &#39;error&#39;,
+        // 禁止使用 isMounted
+        &#39;react/no-is-mounted&#39;: &#39;error&#39;,
+        // 禁止在一个文件创建两个组件
+        // @off 有一个 bug https://github.com/yannickcr/eslint-plugin-react/issues/1181
+        &#39;react/no-multi-comp&#39;: &#39;off&#39;,
+        // 禁止在 PureComponent 中使用 shouldComponentUpdate
+        &#39;react/no-redundant-should-component-update&#39;: &#39;error&#39;,
+        // 禁止使用 ReactDOM.render 的返回值
+        &#39;react/no-render-return-value&#39;: &#39;error&#39;,
+        // 禁止使用 setState
+        // @off setState 很常用
+        &#39;react/no-set-state&#39;: &#39;off&#39;,
+        // 禁止拼写错误
+        &#39;react/no-typos&#39;: &#39;error&#39;,
+        // 禁止使用字符串 ref
+        &#39;react/no-string-refs&#39;: &#39;error&#39;,
+        // 禁止在组件的内部存在未转义的 &gt;, &quot;, &#39; 或 &#125;
+        &#39;react/no-unescaped-entities&#39;: &#39;error&#39;,
+        // @fixable 禁止出现 HTML 中的属性，如 class
+        &#39;react/no-unknown-property&#39;: &#39;error&#39;,
+        // 禁止出现未使用的 propTypes
+        // @off 不强制要求写 propTypes
+        &#39;react/no-unused-prop-types&#39;: &#39;off&#39;,
+        // 定义过的 state 必须使用
+        // @off 没有官方文档，并且存在很多 bug： https://github.com/yannickcr/eslint-plugin-react/search?q=no-unused-state&amp;type=Issues&amp;utf8=%E2%9C%93
+        &#39;react/no-unused-state&#39;: &#39;off&#39;,
+        // 禁止在 componentWillUpdate 中使用 setState
+        &#39;react/no-will-update-set-state&#39;: &#39;error&#39;,
+        // 必须使用 Class 的形式创建组件
+        &#39;react/prefer-es6-class&#39;: [
+            &#39;error&#39;,
+            &#39;always&#39;
+        ],
+        // 必须使用 pure function
+        // @off 没必要限制
+        &#39;react/prefer-stateless-function&#39;: &#39;off&#39;,
+        // 组件必须写 propTypes
+        // @off 不强制要求写 propTypes
+        &#39;react/prop-types&#39;: &#39;off&#39;,
+        // 出现 jsx 的地方必须 import React
+        // @off 已经在 no-undef 中限制了
+        &#39;react/react-in-jsx-scope&#39;: &#39;off&#39;,
+        // 非 required 的 prop 必须有 defaultProps
+        // @off 不强制要求写 propTypes
+        &#39;react/require-default-props&#39;: &#39;off&#39;,
+        // 组件必须有 shouldComponentUpdate
+        // @off 没必要限制
+        &#39;react/require-optimization&#39;: &#39;off&#39;,
+        // render 方法中必须有返回值
+        &#39;react/require-render-return&#39;: &#39;error&#39;,
+        // @fixable 组件内没有 children 时，必须使用自闭和写法
+        // @off 没必要限制
+        &#39;react/self-closing-comp&#39;: &#39;off&#39;,
+        // @fixable 组件内方法必须按照一定规则排序
+        &#39;react/sort-comp&#39;: &#39;error&#39;,
+        // propTypes 的熟悉必须按照字母排序
+        // @off 没必要限制
+        &#39;react/sort-prop-types&#39;: &#39;off&#39;,
+        // style 属性的取值必须是 object
+        &#39;react/style-prop-object&#39;: &#39;error&#39;,
+        // HTML 中的自闭和标签禁止有 children
+        &#39;react/void-dom-elements-no-children&#39;: &#39;error&#39;,
+        // @fixable 布尔值的属性必须显式的写 someprop=&#123;true&#125;
+        // @off 没必要限制
+        &#39;react/jsx-boolean-value&#39;: &#39;off&#39;,
+        // @fixable 自闭和标签的反尖括号必须与尖括号的那一行对齐
+        &#39;react/jsx-closing-bracket-location&#39;: [
+            &#39;error&#39;,
+            &#123;
+                nonEmpty: false,
+                selfClosing: &#39;line-aligned&#39;
+            &#125;
+        ],
+        // @fixable 结束标签必须与开始标签的那一行对齐
+        // @off 已经在 jsx-indent 中限制了
+        &#39;react/jsx-closing-tag-location&#39;: &#39;off&#39;,
+        // @fixable 大括号内前后禁止有空格
+        &#39;react/jsx-curly-spacing&#39;: [
+            &#39;error&#39;,
+            &#123;
+                when: &#39;never&#39;,
+                attributes: &#123;
+                    allowMultiline: true
+                &#125;,
+                children: true,
+                spacing: &#123;
+                    objectLiterals: &#39;never&#39;
+                &#125;
+            &#125;
+        ],
+        // @fixable props 与 value 之间的等号前后禁止有空格
+        &#39;react/jsx-equals-spacing&#39;: [
+            &#39;error&#39;,
+            &#39;never&#39;
+        ],
+        // 限制文件后缀
+        // @off 没必要限制
+        &#39;react/jsx-filename-extension&#39;: &#39;off&#39;,
+        // @fixable 第一个 prop 必须得换行
+        // @off 没必要限制
+        &#39;react/jsx-first-prop-new-line&#39;: &#39;off&#39;,
+        // handler 的名称必须是 onXXX 或 handleXXX
+        // @off 没必要限制
+        &#39;react/jsx-handler-names&#39;: &#39;off&#39;,
+        // @fixable jsx 的 children 缩进必须为四个空格
+        &#39;react/jsx-indent&#39;: [
+            &#39;error&#39;,
+            4
+        ],
+        // @fixable jsx 的 props 缩进必须为四个空格
+        &#39;react/jsx-indent-props&#39;: [
+            &#39;error&#39;,
+            4
+        ],
+        // 数组中的 jsx 必须有 key
+        &#39;react/jsx-key&#39;: &#39;error&#39;,
+        // @fixable 限制每行的 props 数量
+        // @off 没必要限制
+        &#39;react/jsx-max-props-per-line&#39;: &#39;off&#39;,
+        // jsx 中禁止使用 bind
+        // @off 太严格了
+        &#39;react/jsx-no-bind&#39;: &#39;off&#39;,
+        // 禁止在 jsx 中使用像注释的字符串
+        &#39;react/jsx-no-comment-textnodes&#39;: &#39;error&#39;,
+        // 禁止出现重复的 props
+        &#39;react/jsx-no-duplicate-props&#39;: &#39;error&#39;,
+        // 禁止在 jsx 中出现字符串
+        // @off 没必要限制
+        &#39;react/jsx-no-literals&#39;: &#39;off&#39;,
+        // 禁止使用 target=&quot;_blank&quot;
+        // @off 没必要限制
+        &#39;react/jsx-no-target-blank&#39;: &#39;off&#39;,
+        // 禁止使用未定义的 jsx elemet
+        &#39;react/jsx-no-undef&#39;: &#39;error&#39;,
+        // 禁止使用 pascal 写法的 jsx，比如 &lt;TEST_COMPONENT&gt;
+        &#39;react/jsx-pascal-case&#39;: &#39;error&#39;,
+        // @fixable props 必须排好序
+        // @off 没必要限制
+        &#39;react/jsx-sort-props&#39;: &#39;off&#39;,
+        // @fixable jsx 的开始和闭合处禁止有空格
+        &#39;react/jsx-tag-spacing&#39;: [
+            &#39;error&#39;,
+            &#123;
+                closingSlash: &#39;never&#39;,
+                beforeSelfClosing: &#39;always&#39;,
+                afterOpening: &#39;never&#39;
+            &#125;
+        ],
+        // jsx 文件必须 import React
+        &#39;react/jsx-uses-react&#39;: &#39;error&#39;,
+        // 定义了的 jsx element 必须使用
+        &#39;react/jsx-uses-vars&#39;: &#39;error&#39;,
+        // @fixable 多行的 jsx 必须有括号包起来
+        // @off 没必要限制
+        &#39;react/jsx-wrap-multilines&#39;: &#39;off&#39;
+    &#125;
+&#125;;
+</code></pre>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/AlloyTeam/eslint-config-alloy/blob/master/react.js">eslint 标准规则</a></li>
+</ul>
+<pre class=" language-json"><code class="language-json">/**
+ * AlloyTeam eslint 规则
+ *
+ * 包含所有 eslint 规则
+ * 使用 babel-eslint 作为解析器
+ *
+ * @fixable 表示此配置支持 --fix
+ * @off 表示此配置被关闭了，并且后面说明了关闭的原因
+ */
+
+module.exports = &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    parser<span class="token operator">:</span> 'babel-eslint'<span class="token punctuation">,</span>
+    parserOptions<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        ecmaVersion<span class="token operator">:</span> <span class="token number">2017</span><span class="token punctuation">,</span>
+        sourceType<span class="token operator">:</span> 'module'<span class="token punctuation">,</span>
+        ecmaFeatures<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+            // @TODO Deprecated https<span class="token operator">:</span>//eslint.org/docs/user-guide/configuring#deprecated
+            experimentalObjectRestSpread<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            jsx<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            modules<span class="token operator">:</span> <span class="token boolean">true</span>
+        &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+    env<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        browser<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        node<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        commonjs<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        es6<span class="token operator">:</span> <span class="token boolean">true</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+    // 以当前目录为根目录，不再向上查找 .eslintrc.js
+    root<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    rules<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        //
+        //
+        // 可能的错误
+        // 这些规则与 JavaScript 代码中可能的语法错误或逻辑错误有关
+        //
+        // 禁止 for 循环出现方向错误的循环，比如 for (i = <span class="token number">0</span><span class="token punctuation">;</span> i &lt; <span class="token number">10</span><span class="token punctuation">;</span> i--<span class="token punctuation">)</span>
+        'for-direction'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // getter 必须有返回值，并且禁止返回空，比如 return<span class="token punctuation">;</span>
+        'getter-return'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                allowImplicit<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止将 await 写在循环里，因为这样就无法同时发送多个异步请求了
+        // @off 要求太严格了，有时需要在循环中写 await
+        'no-await-in-loop'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止与负零进行比较
+        'no-compare-neg-zero'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在测试表达式中使用赋值语句，除非这个赋值语句被括号包起来了
+        'no-cond-assign'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'except-parens'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止使用 console
+        // @off console 的使用很常见
+        'no-console'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止将常量作为分支条件判断中的测试表达式，但允许作为循环条件判断中的测试表达式
+        'no-constant-condition'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                checkLoops<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止在正则表达式中出现 Ctrl 键的 ASCII 表示，即禁止使用 /\x1f/
+        // @off 几乎不会遇到这种场景
+        'no-control-regex'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止使用 debugger
+        'no-debugger'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在函数参数中出现重复名称的参数
+        'no-dupe-args'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在对象字面量中出现重复名称的键名
+        'no-dupe-keys'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在 switch 语句中出现重复测试表达式的 case
+        'no-duplicate-case'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现空代码块，允许 catch 为空代码块
+        'no-empty'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                allowEmptyCatch<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止在正则表达式中使用空的字符集 <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        'no-empty-character-class'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止将 catch 的第一个参数 error 重新赋值
+        'no-ex-assign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止不必要的布尔类型转换，比如 !! 或 Boolean
+        'no-extra-boolean-cast'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止函数表达式中出现多余的括号，比如 let foo = (function (<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> return <span class="token number">1</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+        'no-extra-parens'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'functions'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 禁止出现多余的分号
+        'no-extra-semi'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止将一个函数声明重新赋值，如：
+        // function foo(<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        // foo = bar
+        'no-func-assign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在 if 代码块内出现函数声明
+        'no-inner-declarations'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'both'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止在 RegExp 构造函数中出现非法的正则表达式
+        'no-invalid-regexp'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用特殊空白符（比如全角空格），除非是出现在字符串、正则表达式或模版字符串中
+        'no-irregular-whitespace'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                skipStrings<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                skipComments<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                skipRegExps<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                skipTemplates<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止将 Math<span class="token punctuation">,</span> JSON 或 Reflect 直接作为函数调用
+        'no-obj-calls'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 hasOwnProperty<span class="token punctuation">,</span> isPrototypeOf 或 propertyIsEnumerable
+        // @off hasOwnProperty 比较常用
+        'no-prototype-builtins'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止在正则表达式中出现连续的空格，必须使用 /foo &amp;#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">3</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span>bar/ 代替
+        'no-regex-spaces'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在数组中出现连续的逗号，如 let foo = <span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token punctuation">]</span>
+        'no-sparse-arrays'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在普通字符串中出现模版字符串里的变量形式，如 'Hello $&amp;#<span class="token number">123</span><span class="token punctuation">;</span>name&amp;#<span class="token number">125</span><span class="token punctuation">;</span>!'
+        'no-template-curly-in-string'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现难以理解的多行表达式，如：
+        // let foo = bar
+        // <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>.forEach(baz<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        'no-unexpected-multiline'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在 return<span class="token punctuation">,</span> throw<span class="token punctuation">,</span> break 或 continue 之后还有代码
+        'no-unreachable'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在 finally 中出现 return<span class="token punctuation">,</span> throw<span class="token punctuation">,</span> break 或 continue
+        'no-unsafe-finally'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止在 in 或 instanceof 操作符的左侧使用感叹号，如 if (!key in object<span class="token punctuation">)</span>
+        'no-unsafe-negation'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 必须使用 isNaN(foo<span class="token punctuation">)</span> 而不是 foo === NaN
+        'use-isnan'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 注释必须符合 jsdoc 的规范
+        // @off jsdoc 要求太严格
+        'valid-jsdoc'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // typeof 表达式比较的对象必须是 'undefined'<span class="token punctuation">,</span> 'object'<span class="token punctuation">,</span> 'boolean'<span class="token punctuation">,</span> 'number'<span class="token punctuation">,</span> 'string'<span class="token punctuation">,</span> 'function' 或 'symbol'
+        'valid-typeof'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+
+
+
+        //
+        //
+        // 最佳实践
+        // 这些规则通过一些最佳实践帮助你避免问题
+        //
+        // setter 必须有对应的 getter，getter 可以没有对应的 setter
+        'accessor-pairs'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                setWithoutGet<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                getWithoutSet<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 数组的方法除了 forEach 之外，回调函数必须有返回值
+        'array-callback-return'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 将 var 定义的变量视为块作用域，禁止在块外使用
+        'block-scoped-var'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 在类的非静态方法中，必须存在对 this 的引用
+        // @off 太严格了
+        'class-methods-use-this'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止函数的循环复杂度超过 <span class="token number">20</span>，https<span class="token operator">:</span>//en.wikipedia.org/wiki/Cyclomatic_complexity
+        'complexity'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                max<span class="token operator">:</span> <span class="token number">20</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止函数在不同分支返回不同类型的值
+        // @off 太严格了
+        'consistent-return'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable if 后面必须要有 &amp;#<span class="token number">123</span><span class="token punctuation">;</span>，除非是单行 if
+        'curly'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'multi-line'<span class="token punctuation">,</span>
+            'consistent'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // switch 语句必须有 default
+        // @off 太严格了
+        'default-case'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 链式调用的时候，点号必须放在第二行开头处，禁止放在第一行结尾处
+        'dot-location'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'property'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 禁止出现 foo<span class="token punctuation">[</span>'bar'<span class="token punctuation">]</span>，必须写成 foo.bar
+        // @off 当需要写一系列属性的时候，可以更统一
+        'dot-notation'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用 === 或 !==，禁止使用 == 或 !=，与 <span class="token null">null</span> 比较时除外
+        'eqeqeq'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token null">null</span><span class="token operator">:</span> 'ignore'
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // for in 内部必须有 hasOwnProperty
+        'guard-for-in'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 alert
+        // @off alert 很常用
+        'no-alert'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 caller 或 callee
+        'no-caller'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // switch 的 case 内有变量定义的时候，必须使用大括号将 case 内变成一个代码块
+        'no-case-declarations'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在正则表达式中出现形似除法操作符的开头，如 let a = /=foo/
+        // @off 有代码高亮的话，在阅读这种代码时，也完全不会产生歧义或理解上的困难
+        'no-div-regex'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止在 else 内使用 return，必须改为提前结束
+        // @off else 中使用 return 可以使代码结构更清晰
+        'no-else-return'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 不允许有空函数，除非是将一个空函数设置为某个项的默认值
+        'no-empty-function'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                allow<span class="token operator">:</span> <span class="token punctuation">[</span>
+                    'functions'<span class="token punctuation">,</span>
+                    'arrowFunctions'
+                <span class="token punctuation">]</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止解构中出现空 &amp;#<span class="token number">123</span><span class="token punctuation">;</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span> 或 <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        'no-empty-pattern'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 foo == <span class="token null">null</span> 或 foo != <span class="token null">null</span>，必须使用 foo === <span class="token null">null</span> 或 foo !== <span class="token null">null</span>
+        // @off foo == <span class="token null">null</span> 用于判断 foo 不是 undefined 并且不是 <span class="token null">null</span>，比较常用，故允许此写法
+        'no-eq-<span class="token null">null</span>'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 eval
+        'no-eval'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止修改原生对象
+        'no-extend-native'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止出现没必要的 bind
+        'no-extra-bind'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止出现没必要的 label
+        'no-extra-label'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // switch 的 case 内必须有 break<span class="token punctuation">,</span> return 或 throw
+        'no-fallthrough'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 表示小数时，禁止省略 <span class="token number">0</span>，比如 .<span class="token number">5</span>
+        'no-floating-decimal'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止对全局变量赋值
+        'no-global-assign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止使用 !! ~ 等难以理解的运算符
+        // 仅允许使用 !!
+        'no-implicit-coercion'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                allow<span class="token operator">:</span> <span class="token punctuation">[</span>
+                    '!!'
+                <span class="token punctuation">]</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止在全局作用域下定义变量或申明函数
+        'no-implicit-globals'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在 setTimeout 或 setInterval 中传入字符串，如 setTimeout('alert(<span class="token string">"Hi!"</span><span class="token punctuation">)</span>'<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        'no-implied-eval'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在类之外的地方使用 this
+        // @off this 的使用很灵活，事件回调中可以表示当前元素，函数也可以先用 this，等以后被调用的时候再 call
+        'no-invalid-this'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 __iterator__
+        'no-iterator'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 label
+        'no-labels'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用没必要的 &amp;#<span class="token number">123</span><span class="token punctuation">;</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span> 作为代码块
+        'no-lone-blocks'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止在循环内的函数中出现循环体条件语句中定义的变量，比如：
+        // for (var i = <span class="token number">0</span><span class="token punctuation">;</span> i &lt; <span class="token number">10</span><span class="token punctuation">;</span> i++<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        //     (function (<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> return i &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>(<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        // &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        'no-loop-func'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 magic numbers
+        // @off 太严格了
+        'no-magic-numbers'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止出现连续的多个空格，除非是注释前，或对齐对象的属性、变量定义、import 等
+        'no-multi-spaces'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                ignoreEOLComments<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                exceptions<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                    Property<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                    BinaryExpression<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                    VariableDeclarator<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                    ImportDeclaration<span class="token operator">:</span> <span class="token boolean">true</span>
+                &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止使用 \ 来换行字符串
+        'no-multi-str'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止直接 new 一个类而不赋值
+        'no-new'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 new Function，比如 let x = new Function(<span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token string">"b"</span><span class="token punctuation">,</span> <span class="token string">"return a + b"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        'no-new-func'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 new 来生成 String<span class="token punctuation">,</span> Number 或 Boolean
+        'no-new-wrappers'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 <span class="token number">0</span> 开头的数字表示八进制数
+        'no-octal'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用八进制的转义符
+        'no-octal-escape'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止对函数的参数重新赋值
+        'no-param-reassign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 __proto__
+        'no-proto'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止重复定义变量
+        'no-redeclare'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用指定的对象属性
+        // @off 它用于限制某个具体的 api 不能使用
+        'no-restricted-properties'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止在 return 语句里赋值
+        'no-return-assign'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止在 return 语句里使用 await
+        'no-return-await'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现 location.href = 'javascript<span class="token operator">:</span>void(<span class="token number">0</span><span class="token punctuation">)</span>'<span class="token punctuation">;</span>
+        'no-script-url'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止将自己赋值给自己
+        'no-self-assign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止将自己与自己比较
+        'no-self-compare'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用逗号操作符
+        'no-sequences'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止 throw 字面量，必须 throw 一个 Error 对象
+        'no-throw-literal'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 循环内必须对循环条件的变量有修改
+        'no-unmodified-loop-condition'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止无用的表达式
+        'no-unused-expressions'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                allowShortCircuit<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                allowTernary<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                allowTaggedTemplates<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 禁止出现没用的 label
+        'no-unused-labels'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现没必要的 call 或 apply
+        'no-useless-call'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现没必要的字符串连接
+        'no-useless-concat'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现没必要的转义
+        // @off 转义可以使代码更易懂
+        'no-useless-escape'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止没必要的 return
+        // @off 没必要限制 return
+        'no-useless-return'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 void
+        'no-void'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止注释中出现 TODO 和 FIXME
+        // @off TODO 很常用
+        'no-warning-comments'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 with
+        'no-with'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // Promise 的 reject 中必须传入 Error 对象，而不是字面量
+        'prefer-promise-reject-errors'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // parseInt 必须传入第二个参数
+        'radix'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // async 函数中必须存在 await 语句
+        // @off async function 中没有 await 的写法很常见，比如 koa 的示例中就有这种用法
+        'require-await'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // var 必须在作用域的最前面
+        // @off var 不在最前面也是很常见的用法
+        'vars-on-top'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 立即执行的函数必须符合如下格式 (function (<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> alert('Hello'<span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>(<span class="token punctuation">)</span>
+        'wrap-iife'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'inside'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                functionPrototypeMethods<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 必须使用 if (foo === <span class="token number">5</span><span class="token punctuation">)</span> 而不是 if (<span class="token number">5</span> === foo<span class="token punctuation">)</span>
+        'yoda'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                onlyEquality<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+
+
+        //
+        //
+        // 严格模式
+        // 这些规则与严格模式指令有关
+        //
+        // @fixable 禁止使用 'strict'<span class="token punctuation">;</span>
+        'strict'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+
+
+        //
+        //
+        // 变量
+        // 这些规则与变量申明有关
+        //
+        // 变量必须在定义的时候赋值
+        // @off 先定义后赋值很常见
+        'init-declarations'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止 catch 的参数名与定义过的变量重复
+        // @off 太严格了
+        'no-catch-shadow'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 delete
+        'no-delete-var'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止 label 名称与定义过的变量重复
+        'no-label-var'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用指定的全局变量
+        // @off 它用于限制某个具体的变量名不能使用
+        'no-restricted-globals'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止变量名与上层作用域内的定义过的变量重复
+        // @off 很多时候函数的形参和传参是同名的
+        'no-shadow'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用保留字作为变量名
+        'no-shadow-restricted-names'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用未定义的变量
+        'no-undef'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                typeof<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 禁止将 undefined 赋值给变量
+        'no-undef-init'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止对 undefined 重新赋值
+        'no-undefined'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 定义过的变量必须使用
+        'no-unused-vars'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                vars<span class="token operator">:</span> 'all'<span class="token punctuation">,</span>
+                args<span class="token operator">:</span> 'none'<span class="token punctuation">,</span>
+                caughtErrors<span class="token operator">:</span> 'none'<span class="token punctuation">,</span>
+                ignoreRestSiblings<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 变量必须先定义后使用
+        'no-use-before-define'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                functions<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                classes<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                variables<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+
+
+        //
+        //
+        // Node.js 和 CommonJS
+        // 这些规则与在 Node.js 中运行的代码或浏览器中使用的 CommonJS 有关
+        //
+        // callback 之后必须立即 return
+        // @off Limitations 太多了
+        'callback-return'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // require 必须在全局作用域下
+        // @off 条件加载很常见
+        'global-require'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // callback 中的 error 必须被处理
+        'handle-callback-err'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止直接使用 Buffer
+        'no-buffer-constructor'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 相同类型的 require 必须放在一起
+        // @off 太严格了
+        'no-mixed-requires'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止直接 new require('foo'<span class="token punctuation">)</span>
+        'no-new-require'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止对 __dirname 或 __filename 使用字符串连接
+        'no-path-concat'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 process.env.NODE_ENV
+        // @off 使用很常见
+        'no-process-env'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 process.exit(<span class="token number">0</span><span class="token punctuation">)</span>
+        // @off 使用很常见
+        'no-process-exit'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用指定的模块
+        // @off 它用于限制某个具体的模块不能使用
+        'no-restricted-modules'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 node 中的同步的方法，比如 fs.readFileSync
+        // @off 使用很常见
+        'no-sync'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+
+
+
+        //
+        //
+        // 风格问题
+        // 这些规则与代码风格有关，所以是非常主观的
+        //
+        // @fixable 配置数组的中括号内前后的换行格式
+        // @off 配置项无法配制成想要的样子
+        'array-bracket-newline'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 数组的括号内的前后禁止有空格
+        'array-bracket-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 配置数组的元素之间的换行格式
+        // @off 允许一行包含多个元素，方便大数量的数组的书写
+        'array-element-newline'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 代码块如果在一行内，那么大括号内的首尾必须有空格，比如 function (<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> alert('Hello'<span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        'block-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable if 与 else 的大括号风格必须一致
+        // @off else 代码块可能前面需要有一行注释
+        'brace-style'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 变量名必须是 camelcase 风格的
+        // @off 很多 api 或文件名都不是 camelcase
+        'camelcase'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 注释的首字母必须大写
+        // @off 没必要限制
+        'capitalized-comments'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 对象的最后一个属性末尾必须有逗号
+        // @off 没必要限制
+        'comma-dangle'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 逗号前禁止有空格，逗号后必须要有空格
+        'comma-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                'before'<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                'after'<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 禁止在行首写逗号
+        'comma-style'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'last'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 用作对象的计算属性时，中括号内的首尾禁止有空格
+        'computed-property-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 限制 this 的别名
+        // @off 没必要限制
+        'consistent-this'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 文件最后一行必须有一个空行
+        // @off 没必要限制
+        'eol-last'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 函数名和执行它的括号之间禁止有空格
+        'func-call-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 函数赋值给变量的时候，函数名必须与变量名一致
+        'func-name-matching'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                includeCommonJSModuleExports<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 函数必须有名字
+        // @off 没必要限制
+        'func-names'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 必须只使用函数声明或只使用函数表达式
+        // @off 没必要限制
+        'func-style'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用指定的标识符
+        // @off 它用于限制某个具体的标识符不能使用
+        'id-blacklist'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 限制变量名长度
+        // @off 没必要限制变量名长度
+        'id-length'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 限制变量名必须匹配指定的正则表达式
+        // @off 没必要限制变量名
+        'id-match'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 一个缩进必须用四个空格替代
+        'indent'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            <span class="token number">4</span><span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                SwitchCase<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                flatTernaryExpressions<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable jsx 中的属性必须用双引号
+        'jsx-quotes'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'prefer-double'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 对象字面量中冒号前面禁止有空格，后面必须有空格
+        'key-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                beforeColon<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                afterColon<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                mode<span class="token operator">:</span> 'strict'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 关键字前后必须有空格
+        'keyword-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                before<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                after<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 单行注释必须写在上一行
+        // @off 没必要限制
+        'line-comment-position'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 限制换行符为 LF 或 CRLF
+        // @off 没必要限制
+        'linebreak-style'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 注释前后必须有空行
+        // @off 没必要限制
+        'lines-around-comment'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 代码块嵌套的深度禁止超过 <span class="token number">5</span> 层
+        'max-depth'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            <span class="token number">5</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 限制一行的长度
+        // @off 现在编辑器已经很智能了，不需要限制一行的长度
+        'max-len'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 限制一个文件最多的行数
+        // @off 没必要限制
+        'max-lines'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 回调函数嵌套禁止超过 <span class="token number">3</span> 层，多了请用 async await 替代
+        'max-nested-callbacks'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            <span class="token number">3</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 函数的参数禁止超过 <span class="token number">7</span> 个
+        'max-params'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            <span class="token number">7</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 限制函数块中的语句数量
+        // @off 没必要限制
+        'max-statements'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 限制一行中的语句数量
+        // @off 没必要限制
+        'max-statements-per-line'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 三元表达式必须得换行
+        // @off 三元表达式可以随意使用
+        'multiline-ternary'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // new 后面的类名必须首字母大写
+        'new-cap'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                newIsCap<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                capIsNew<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                properties<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable new 后面的类必须有小括号
+        'new-parens'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 链式调用必须换行
+        // @off 没必要限制
+        'newline-per-chained-call'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 Array 构造函数
+        'no-array-constructor'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用位运算
+        // @off 位运算很常见
+        'no-bitwise'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 continue
+        // @off continue 很常用
+        'no-continue'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止在代码后添加内联注释
+        // @off 内联注释很常用
+        'no-inline-comments'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止 else 中只有一个单独的 if
+        // @off 单独的 if 可以把逻辑表达的更清楚
+        'no-lonely-if'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止混用不同的操作符，比如 let foo = a &amp;&amp; b &lt; <span class="token number">0</span> || c > <span class="token number">0</span> || d + <span class="token number">1</span> === <span class="token number">0</span>
+        // @off 太严格了，可以由使用者自己去判断如何混用操作符
+        'no-mixed-operators'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止混用空格和缩进
+        'no-mixed-spaces-and-tabs'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止连续赋值，比如 a = b = c = <span class="token number">5</span>
+        // @off 没必要限制
+        'no-multi-assign'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止出现超过三行的连续空行
+        'no-multiple-empty-lines'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                max<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+                maxEOF<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                maxBOF<span class="token operator">:</span> <span class="token number">1</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止 if 里面有否定的表达式，比如：
+        // if (a !== b<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        //     doSomething(<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        // &amp;#<span class="token number">125</span><span class="token punctuation">;</span> else &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        //     doSomethingElse(<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        // &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        // @off 否定的表达式可以把逻辑表达的更清楚
+        'no-negated-condition'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用嵌套的三元表达式，比如 a ? b <span class="token operator">:</span> c ? d <span class="token operator">:</span> e
+        // @off 没必要限制
+        'no-nested-ternary'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止直接 new Object
+        'no-new-object'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 ++ 或 --
+        // @off 没必要限制
+        'no-plusplus'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用特定的语法
+        // @off 它用于限制某个具体的语法不能使用
+        'no-restricted-syntax'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止使用 tabs
+        'no-tabs'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用三元表达式
+        // @off 三元表达式很常用
+        'no-ternary'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止行尾有空格
+        'no-trailing-spaces'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止变量名出现下划线
+        // @off 下划线在变量名中很常用
+        'no-underscore-dangle'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用 !a 替代 a ? <span class="token boolean">false</span> <span class="token operator">:</span> <span class="token boolean">true</span>
+        // @off 后者表达的更清晰
+        'no-unneeded-ternary'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 禁止属性前有空格，比如 foo. bar(<span class="token punctuation">)</span>
+        'no-whitespace-before-property'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止 if 后面不加大括号而写两行代码
+        'nonblock-statement-body-position'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'beside'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                overrides<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                    while<span class="token operator">:</span> 'below'
+                &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 大括号内的首尾必须有换行
+        'object-curly-newline'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                multiline<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                consistent<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 对象字面量只有一行时，大括号内的首尾必须有空格
+        'object-curly-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                arraysInObjects<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                objectsInObjects<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 对象字面量内的属性每行必须只有一个
+        // @off 没必要限制
+        'object-property-newline'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止变量申明时用逗号一次申明多个
+        'one-var'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 变量申明必须每行一个
+        'one-var-declaration-per-line'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 必须使用 x = x + y 而不是 x += y
+        // @off 没必要限制
+        'operator-assignment'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 需要换行的时候，操作符必须放在行末，比如：
+        // let foo = <span class="token number">1</span> +
+        //     <span class="token number">2</span>
+        // @off 有时放在第二行开始处更易读
+        'operator-linebreak'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 代码块首尾必须要空行
+        // @off 没必要限制
+        'padded-blocks'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 限制语句之间的空行规则，比如变量定义完之后必须要空行
+        // @off 没必要限制
+        'padding-line-between-statements'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 对象字面量的键名禁止用引号括起来
+        // @off 没必要限制
+        'quote-props'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用单引号，禁止使用双引号
+        'quotes'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'single'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                avoidEscape<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                allowTemplateLiterals<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 必须使用 jsdoc 风格的注释
+        // @off 太严格了
+        'require-jsdoc'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 结尾必须有分号
+        'semi'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                omitLastInOneLineBlock<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 一行有多个语句时，分号前面禁止有空格，分号后面必须有空格
+        'semi-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                before<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                after<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 分号必须写在行尾，禁止在行首出现
+        'semi-style'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'last'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 对象字面量的键名必须排好序
+        // @off 没必要限制
+        'sort-keys'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 变量申明必须排好序
+        // @off 没必要限制
+        'sort-vars'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable if<span class="token punctuation">,</span> function 等的大括号之前必须要有空格，比如 if (a<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        'space-before-blocks'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable function 的小括号之前必须要有空格
+        'space-before-function-paren'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                anonymous<span class="token operator">:</span> 'ignore'<span class="token punctuation">,</span>
+                named<span class="token operator">:</span> 'never'<span class="token punctuation">,</span>
+                asyncArrow<span class="token operator">:</span> 'always'
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 小括号内的首尾禁止有空格
+        'space-in-parens'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 操作符左右必须有空格，比如 let sum = <span class="token number">1</span> + <span class="token number">2</span><span class="token punctuation">;</span>
+        'space-infix-ops'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable new<span class="token punctuation">,</span> typeof 等后面必须有空格，++<span class="token punctuation">,</span> -- 等禁止有空格，比如：
+        // let foo = new Person(<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        // bar = bar++<span class="token punctuation">;</span>
+        'space-unary-ops'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                words<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                nonwords<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 注释的斜线或 * 后必须有空格
+        'spaced-comment'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'always'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                block<span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                    exceptions<span class="token operator">:</span> <span class="token punctuation">[</span>
+                        '*'
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    balanced<span class="token operator">:</span> <span class="token boolean">true</span>
+                &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable case 的冒号前禁止有空格，冒号后必须有空格
+        'switch-colon-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                after<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                before<span class="token operator">:</span> <span class="token boolean">false</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 模版字符串的 tag 之后禁止有空格，比如 tag`Hello World`
+        'template-tag-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 文件开头禁止有 BOM
+        'unicode-bom'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable 正则表达式必须有括号包起来
+        // @off 没必要限制
+        'wrap-regex'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+
+
+
+        //
+        //
+        // ECMAScript <span class="token number">6</span>
+        // 这些规则与 ES6（即通常所说的 ES2015）有关
+        //
+        // @fixable 箭头函数能够省略 return 的时候，必须省略，比如必须写成 (<span class="token punctuation">)</span> => <span class="token number">0</span>，禁止写成 (<span class="token punctuation">)</span> => &amp;#<span class="token number">123</span><span class="token punctuation">;</span> return <span class="token number">0</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        // @off 箭头函数的返回值，应该允许灵活设置
+        'arrow-body-style'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 箭头函数只有一个参数的时候，必须加括号
+        // @off 应该允许灵活设置
+        'arrow-parens'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 箭头函数的箭头前后必须有空格
+        'arrow-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                before<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                after<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // constructor 中必须有 super
+        'constructor-super'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable generator 的 * 前面禁止有空格，后面必须有空格
+        'generator-star-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                before<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                after<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止对定义过的 class 重新赋值
+        'no-class-assign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止出现难以理解的箭头函数，比如 let x = a => <span class="token number">1</span> ? <span class="token number">2</span> <span class="token operator">:</span> <span class="token number">3</span>
+        'no-confusing-arrow'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+                allowParens<span class="token operator">:</span> <span class="token boolean">true</span>
+            &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // 禁止对使用 const 定义的常量重新赋值
+        'no-const-assign'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止重复定义类
+        'no-dupe-class-members'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止重复 import 模块
+        'no-duplicate-imports'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止使用 new 来生成 Symbol
+        'no-new-symbol'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止 import 指定的模块
+        // @off 它用于限制某个具体的模块不能使用
+        'no-restricted-imports'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 禁止在 super 被调用之前使用 this 或 super
+        'no-this-before-super'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止出现没必要的计算键名，比如 let a = &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token punctuation">[</span>'<span class="token number">0</span>'<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token number">0</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+        'no-useless-computed-key'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // 禁止出现没必要的 constructor，比如 constructor(value<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> super(value<span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        'no-useless-constructor'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止解构时出现同样名字的的重命名，比如 let &amp;#<span class="token number">123</span><span class="token punctuation">;</span> foo<span class="token operator">:</span> foo &amp;#<span class="token number">125</span><span class="token punctuation">;</span> = bar<span class="token punctuation">;</span>
+        'no-useless-rename'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 禁止使用 var
+        'no-var'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable 必须使用 a = &amp;#<span class="token number">123</span><span class="token punctuation">;</span>b&amp;#<span class="token number">125</span><span class="token punctuation">;</span> 而不是 a = &amp;#<span class="token number">123</span><span class="token punctuation">;</span>b<span class="token operator">:</span> b&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+        // @off 没必要强制要求
+        'object-shorthand'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用箭头函数作为回调
+        // @off 没必要强制要求
+        'prefer-arrow-callback'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 申明后不再被修改的变量必须使用 const 来申明
+        // @off 没必要强制要求
+        'prefer-const'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 必须使用解构
+        // @off 没必要强制要求
+        'prefer-destructuring'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用 0b11111011 而不是 parseInt('<span class="token number">111110111</span>'<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+        // @off 没必要强制要求
+        'prefer-numeric-literals'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 必须使用 ...args 而不是 arguments
+        // @off 没必要强制要求
+        'prefer-rest-params'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用 ... 而不是 apply，比如 foo(...args<span class="token punctuation">)</span>
+        // @off  apply 很常用
+        'prefer-spread'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // @fixable 必须使用模版字符串而不是字符串连接
+        // @off 字符串连接很常用
+        'prefer-template'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // generator 函数内必须有 yield
+        'require-yield'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable ... 的后面禁止有空格
+        'rest-spread-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable import 必须按规则排序
+        // @off 没必要强制要求
+        'sort-imports'<span class="token operator">:</span> 'off'<span class="token punctuation">,</span>
+        // 创建 Symbol 时必须传入参数
+        'symbol-description'<span class="token operator">:</span> 'error'<span class="token punctuation">,</span>
+        // @fixable $&amp;#<span class="token number">123</span><span class="token punctuation">;</span>name&amp;#<span class="token number">125</span><span class="token punctuation">;</span> 内的首尾禁止有空格
+        'template-curly-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'never'
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        // @fixable yield* 后面必须要有空格
+        'yield-star-spacing'<span class="token operator">:</span> <span class="token punctuation">[</span>
+            'error'<span class="token punctuation">,</span>
+            'after'
+        <span class="token punctuation">]</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+</code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">爱料理的老大</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://alhua.fit/2020/01/26/qian-duan/eslint/eslint-pei-zhi-wen-jian-jie-xi/">http://alhua.fit/2020/01/26/qian-duan/eslint/eslint-pei-zhi-wen-jian-jie-xi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">爱料理的老大</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/eslintrc/">
+                                    <span class="chip bg-color">eslintrc</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/02/02/qian-duan/eslint/eslintrc-de-vscode-zi-dong-bao-cun-pei-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="eslintrc的vscode自动保存配置">
+                        
+                        <span class="card-title">eslintrc的vscode自动保存配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/eslintrc/">
+                        <span class="chip bg-color">eslintrc</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/01/22/qian-duan/eslint/cuo-wu-eslint-yi-zhi-bao-expected-linebreaks-to-be-lf-but-found-crlf/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="错误 eslint一直报Expected linebreaks to be &#39;LF&#39; but found &#39;CRLF&#39;">
+                        
+                        <span class="card-title">错误 eslint一直报Expected linebreaks to be &#39;LF&#39; but found &#39;CRLF&#39;</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/eslintrc/">
+                        <span class="chip bg-color">eslintrc</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <span id="year">2019</span>
+            |&nbsp;<a href="/about" target="_blank">爱料理的老大</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            <br>
+            
+            
+            
+                
+            
+            <br>
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/1216569479" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1216569479@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1216569479" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1216569479" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
