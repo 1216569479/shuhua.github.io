@@ -6,7 +6,7 @@
   <link href="http://alhua.fit/atom.xml" rel="self"/>
   
   <link href="http://alhua.fit/"/>
-  <updated>2022-04-14T07:25:42.669Z</updated>
+  <updated>2022-04-14T07:40:17.515Z</updated>
   <id>http://alhua.fit/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://alhua.fit/2020/04/02/hou-duan/mysql/di-01-zhang-ji-ben-de-select-yu-yan/"/>
     <id>http://alhua.fit/2020/04/02/hou-duan/mysql/di-01-zhang-ji-ben-de-select-yu-yan/</id>
     <published>2020-04-02T02:30:00.000Z</published>
-    <updated>2022-04-14T07:25:42.669Z</updated>
+    <updated>2022-04-14T07:40:17.515Z</updated>
     
     
       
@@ -268,33 +268,6 @@
   </entry>
   
   <entry>
-    <title>HTML编码规范</title>
-    <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/html-bian-ma-feng-ge-zhi-nan/"/>
-    <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/html-bian-ma-feng-ge-zhi-nan/</id>
-    <published>2020-01-14T16:12:00.000Z</published>
-    <updated>2022-04-01T10:55:19.428Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;HTML编码规范&quot;&gt;&lt;a href=&quot;#HTML编码规范&quot; class=&quot;headerlink&quot; title=&quot;HTML编码规范&quot;&gt;&lt;/a&gt;HTML编码规范&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
-    
-    
-    <category term="HTML" scheme="http://alhua.fit/tags/HTML/"/>
-    
-    <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CSS编码规范</title>
     <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/css-bian-ma-feng-ge-zhi-nan/"/>
     <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/css-bian-ma-feng-ge-zhi-nan/</id>
@@ -315,25 +288,25 @@
     <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
     
     
-    <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    
     <category term="CSS" scheme="http://alhua.fit/tags/CSS/"/>
+    
+    <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
-    <title>JavaScript编码规范</title>
-    <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/javascript-bian-ma-feng-ge-zhi-nan/"/>
-    <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/javascript-bian-ma-feng-ge-zhi-nan/</id>
+    <title>HTML编码规范</title>
+    <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/html-bian-ma-feng-ge-zhi-nan/"/>
+    <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/html-bian-ma-feng-ge-zhi-nan/</id>
     <published>2020-01-14T16:12:00.000Z</published>
-    <updated>2022-04-01T10:55:19.431Z</updated>
+    <updated>2022-04-01T10:55:19.428Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;JavaScript编码规范&quot;&gt;&lt;a href=&quot;#JavaScript编码规范&quot; class=&quot;headerlink&quot; title=&quot;JavaScript编码规范&quot;&gt;&lt;/a&gt;JavaScript编码规范&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;HTML编码规范&quot;&gt;&lt;a href=&quot;#HTML编码规范&quot; class=&quot;headerlink&quot; title=&quot;HTML编码规范&quot;&gt;&lt;/a&gt;HTML编码规范&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -344,7 +317,7 @@
     
     <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
-    <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
+    <category term="HTML" scheme="http://alhua.fit/tags/HTML/"/>
     
   </entry>
   
@@ -372,6 +345,33 @@
     <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
     <category term="Scss" scheme="http://alhua.fit/tags/Scss/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript编码规范</title>
+    <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/javascript-bian-ma-feng-ge-zhi-nan/"/>
+    <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/javascript-bian-ma-feng-ge-zhi-nan/</id>
+    <published>2020-01-14T16:12:00.000Z</published>
+    <updated>2022-04-01T10:55:19.431Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript编码规范&quot;&gt;&lt;a href=&quot;#JavaScript编码规范&quot; class=&quot;headerlink&quot; title=&quot;JavaScript编码规范&quot;&gt;&lt;/a&gt;JavaScript编码规范&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+    <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
     
   </entry>
   
