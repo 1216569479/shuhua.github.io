@@ -6,7 +6,7 @@
   <link href="http://alhua.fit/atom.xml" rel="self"/>
   
   <link href="http://alhua.fit/"/>
-  <updated>2022-04-14T07:40:17.515Z</updated>
+  <updated>2022-04-21T07:05:26.118Z</updated>
   <id>http://alhua.fit/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL基础篇02：运算符</title>
+    <link href="http://alhua.fit/2020/04/10/hou-duan/mysql/di-02-zhang-yun-suan-fu/"/>
+    <id>http://alhua.fit/2020/04/10/hou-duan/mysql/di-02-zhang-yun-suan-fu/</id>
+    <published>2020-04-10T03:30:00.000Z</published>
+    <updated>2022-04-21T07:05:26.118Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;#MySQL基础篇02：运算符&lt;/p&gt;
+&lt;h3 id=&quot;1-算术运算符&quot;&gt;&lt;a href=&quot;#1-算术运算符&quot; class=&quot;headerlink&quot; title=&quot;1 .算术运算符&quot;&gt;&lt;/a&gt;1</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="http://alhua.fit/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="MySQL" scheme="http://alhua.fit/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL基础篇03：排序和分页</title>
+    <link href="http://alhua.fit/2020/04/10/hou-duan/mysql/di-03-zhang-pai-xu-he-fen-ye/"/>
+    <id>http://alhua.fit/2020/04/10/hou-duan/mysql/di-03-zhang-pai-xu-he-fen-ye/</id>
+    <published>2020-04-10T03:30:00.000Z</published>
+    <updated>2022-04-21T09:43:13.877Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;#MySQL基础篇03：排序和分页&lt;/p&gt;
+&lt;h3 id=&quot;1-排序数据&quot;&gt;&lt;a href=&quot;#1-排序数据&quot; class=&quot;headerlink&quot; title=&quot;1 .排序数据&quot;&gt;&lt;/a&gt;1 .排序数据&lt;/h3&gt;&lt;h5 id=&quot;1-1-排序规则&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="http://alhua.fit/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="MySQL" scheme="http://alhua.fit/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL基础篇01：基本的SELECT语句</title>
@@ -322,33 +374,6 @@
   </entry>
   
   <entry>
-    <title>Scss 编码规范</title>
-    <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/scss-bian-ma-feng-ge-zhi-nan/"/>
-    <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/scss-bian-ma-feng-ge-zhi-nan/</id>
-    <published>2020-01-14T16:12:00.000Z</published>
-    <updated>2022-04-01T10:55:19.432Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Scss-编码规范&quot;&gt;&lt;a href=&quot;#Scss-编码规范&quot; class=&quot;headerlink&quot; title=&quot;Scss 编码规范&quot;&gt;&lt;/a&gt;Scss 编码规范&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
-    
-    
-    <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    
-    <category term="Scss" scheme="http://alhua.fit/tags/Scss/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript编码规范</title>
     <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/javascript-bian-ma-feng-ge-zhi-nan/"/>
     <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/javascript-bian-ma-feng-ge-zhi-nan/</id>
@@ -372,6 +397,33 @@
     <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
     <category term="JavaScript" scheme="http://alhua.fit/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scss 编码规范</title>
+    <link href="http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/scss-bian-ma-feng-ge-zhi-nan/"/>
+    <id>http://alhua.fit/2020/01/15/bian-cheng-zhi-dao/scss-bian-ma-feng-ge-zhi-nan/</id>
+    <published>2020-01-14T16:12:00.000Z</published>
+    <updated>2022-04-01T10:55:19.432Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Scss-编码规范&quot;&gt;&lt;a href=&quot;#Scss-编码规范&quot; class=&quot;headerlink&quot; title=&quot;Scss 编码规范&quot;&gt;&lt;/a&gt;Scss 编码规范&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://alhua.fit/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="编码规范" scheme="http://alhua.fit/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+    <category term="Scss" scheme="http://alhua.fit/tags/Scss/"/>
     
   </entry>
   
@@ -464,56 +516,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;webpack之output（输出）&quot;&gt;&lt;a href=&quot;#webpack之output（输出）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="webpack" scheme="http://alhua.fit/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webpack之entry（入口）</title>
-    <link href="http://alhua.fit/2020/01/04/ruan-jian-gong-ju/webpack/webpack-zhi-entry-ru-kou/"/>
-    <id>http://alhua.fit/2020/01/04/ruan-jian-gong-ju/webpack/webpack-zhi-entry-ru-kou/</id>
-    <published>2020-01-03T16:30:00.000Z</published>
-    <updated>2022-04-01T10:55:19.472Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;webpack之entry（入口）&quot;&gt;&lt;a href=&quot;#webpack之entry（入口）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工具" scheme="http://alhua.fit/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="webpack" scheme="http://alhua.fit/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webpack之Plugins (插件)</title>
-    <link href="http://alhua.fit/2020/01/03/ruan-jian-gong-ju/webpack/webpack-zhi-plugins-cha-jian/"/>
-    <id>http://alhua.fit/2020/01/03/ruan-jian-gong-ju/webpack/webpack-zhi-plugins-cha-jian/</id>
-    <published>2020-01-02T16:30:00.000Z</published>
-    <updated>2022-04-01T10:55:19.471Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;webpack之Plugins-插件&quot;&gt;&lt;a href=&quot;#webpack之Plugins-插件&quot; class=&quot;headerlink&quot; title=&quot;webpack之Plugins (插件)&quot;&gt;&lt;/a&gt;webpack之Plugins</summary>
         
       
     
